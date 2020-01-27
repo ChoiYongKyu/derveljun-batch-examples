@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/batch_db
+    username: admin
+    password: admin.!
+    hikari:
+      connection-timeout: 10000
+      maximum-pool-size: 10
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
